@@ -1,7 +1,6 @@
 .App {
   margin-top: 50px;
   text-align: center;
-  border: 1px solid black;
 }
 
 .list {
@@ -11,9 +10,35 @@
 }
 
 .block {
+  border-bottom: 1px solid black;
+
+  display: flex;
+  align-items: center;
+}
+
+.finance {
+  display: flex;
+  text-align: center;
+
+  gap: 75px;
+
+  width: 400px;
+  height: 50px;
+}
+
+.finance__block-2 {
+  margin-left: 65px;
+}
+
+.title {
+  width: 48px;
+}
+
+.content {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+
+  gap: 25px;
 }
 
 .plus {
@@ -24,37 +49,19 @@
   color: red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.button__click {
+  padding: 5px 15px;
+  border-radius: 10%;
   color: white;
+  background-color: #61dafb;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button__click:hover {
+  cursor: pointer;
 }
